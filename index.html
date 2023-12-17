@@ -1,53 +1,18 @@
-<!--JavaScript - Move Object with Arrow Keys using JavaScript Function.-->
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>JavaScript - Move Object with Arrow Keys using JavaScript Function.</title>
-        <script type="text/javascript">
-            //init object globally
-            var objImage = null;
-            
-            function init() {
-                objImage = document.getElementById("image1");
-                objImage.style.position = "relative";
-                objImage.style.left = "0px";
-                objImage.style.top = "0px";
-            }
-            function getKeyAndMove(e) {
-                var key_code = e.which || e.keyCode;
-                switch (key_code) {
-                    case 37: //left arrow key
-                        moveLeft();
-                        break;
-                    case 38: //Up arrow key
-                        moveUp();
-                        break;
-                    case 39: //right arrow key
-                        moveRight();
-                        break;
-                    case 40: //down arrow key
-                        moveDown();
-                        break;
-                }
-            }
-            function moveLeft() {
-                objImage.style.left = parseInt(objImage.style.left) - 10 + "px";
-            }
-            function moveUp() {
-                objImage.style.top = parseInt(objImage.style.top) - 10 + "px";
-            }
-            function moveRight() {
-                objImage.style.left = parseInt(objImage.style.left) + 10 + "px";
-            }
-            function moveDown() {
-                objImage.style.top = parseInt(objImage.style.top) + 10 + "px";
-            }
-            window.onload = init;
-        </script>
-    </head>
+    <title> Casino
+    </title>
+<head>
+    <h1>Casino</h1>
+</head>
 
-    <body onkeydown="getKeyAndMove(event)">
-        <h1>JavaScript - Move Object with Arrow Keys using JavaScript Function.</h1>
-        <h2>Use Arrow keys to move object left, top, right and down.</h2>
-        <img id="image1" src="BlueSquare.png" alt="includehelp.com"/>
-    </body>
+<body>
+    <link rel="stylesheet" href="style.css">
+
+      <button class="block" href="blackjack.html"> <a href="blackjack.html" target="_blank"> Blackjack </a> </button>
+      <br>
+
+      <button class="block" href="slot.html"> <a href="slot.html" target="_blank"> Slot Machine </a> </button>
+</body>
+
 </html>
